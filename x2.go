@@ -11,7 +11,7 @@ import (
 
 var i int = 0
 
-type empty {}
+type empty struct {}
 type semaphore chan empty
 
 

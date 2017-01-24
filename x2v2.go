@@ -13,9 +13,8 @@ import (
 var i int = 0
 var mutex = &sync.Mutex{}
 
-
-    for j := 0; j<1e6; j++ {
 func thread1() {
+    for j := 0; j<1e6; j++ {
 	mutex.Lock()
         i++
 	mutex.Unlock()
